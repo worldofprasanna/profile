@@ -17,11 +17,14 @@ const Header = () => {
                     Hey I’m Prasanna
                   </h1>
                   <p data-animation="fadeInUp" data-delay=".8s">
-                    Having decade of experience in Software Industry and
-                    passionate to solve hard problems. I have worked with wide
-                    variety of clients (Startups, Enterprises) as a Developer,
-                    Tech Lead, Devops / Infra Engineer. I love to automate
-                    things and highly aligned towards Infrastructure as code.
+                    <div>
+                      Having decade of experience in Software Industry and
+                      passionate to solve hard problems. I have worked with wide variety of clients ranging Startups to Enterprises as a Developer,
+                      Tech Lead, Devops / Infra Freelance Engineer.
+                    </div><br />
+                    <div>
+                      I love to automate things and highly aligned towards Infrastructure as code.
+                    </div>
                   </p>
                   {/* <!-- Hero-btn --> */}
                   <div className="hero__btn">
