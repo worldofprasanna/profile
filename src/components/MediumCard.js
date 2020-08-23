@@ -49,7 +49,7 @@ export default function MediumCard(props) {
           </a>
         </h5>
         <p className="card-text d-inline-block mb-3">
-          {ShortenText(ToText(props.content), 0, 90) + "..."}
+          {ShortenText(ToText(props.content), 0, 70) + "..."}
         </p>
         <br />
         {/* <span className="text-dark">
