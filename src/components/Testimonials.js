@@ -60,7 +60,7 @@ const Testimonials = () => {
         <div className="row">
           <div className="col-xl-6 col-lg-8 col-md-10">
             <div className="section-tittle mb-70">
-              <h2>Some Possitive Feedback That Encourage Us</h2>
+              <h2>Few words about my work,</h2>
             </div>
           </div>
         </div>

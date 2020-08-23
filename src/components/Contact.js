@@ -10,13 +10,15 @@ const Contact = () => {
         <div className="row justify-content-between">
           <div className="col-xl-5 col-lg-7">
             <div className="contact-caption mb-50">
-              <h3>If Not Now, When? Let’s Work Together!</h3>
+              <h3>Feel free to reach out to me for,</h3>
               <p>
-                Consectetur adipiscing elit, sed do eiusmod tempor ididunt ut
-                labore et dolore magna aliqua. Quis ipsum suspendisces gravida.
-                Risus commodo viverra.
+                <ul>
+                  <li>- Any Consulting work on Cloud | Kubernetes | Distributed Systems</li>
+                  <li>- To quickly build a MVP for your awesome idea</li>
+                  <li>- Showcase your Product | Tool. I am happy to take a look at it</li>
+                </ul>
+
               </p>
-              <img src="assets/img/gallery/sin.png" alt="" />
             </div>
           </div>
           <div className="col-xl-5 col-lg-5">

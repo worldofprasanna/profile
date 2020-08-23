@@ -38,12 +38,12 @@ const HomePage = (props) => {
             <div className="row align-items-center justify-content-between">
               <div className="col-xl-6 col-lg-8 col-md-8">
                 <div className="wantToWork-caption wantToWork-caption2">
-                  <h2>Dont worry for contact i`m available</h2>
+                  <h2>Want to talk to me?</h2>
                 </div>
               </div>
               <div className="col-xl-2 col-lg-2 col-md-3">
                 <a href="/" className="btn btn-black f-right">
-                  Contact Me Now
+                  Contact Me Here
                 </a>
               </div>
             </div>

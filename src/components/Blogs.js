@@ -9,7 +9,7 @@ const Blogs = () => {
             <div className="col-lg-6">
               {/* <!-- Section Tittle --> */}
               <div className="section-tittle">
-                <h2>What Services you will Get from me!</h2>
+                <h2>Few of my contributions</h2>
               </div>
             </div>
             <div className="col-lg-6">
@@ -27,7 +27,7 @@ const Blogs = () => {
                       aria-selected="false"
                     >
                       {" "}
-                      All
+                      Blogs
                     </a>
                     <a
                       className="nav-item nav-link"
@@ -39,7 +39,7 @@ const Blogs = () => {
                       aria-selected="false"
                     >
                       {" "}
-                      Branding
+                      Code
                     </a>
                     <a
                       className="nav-item nav-link"
@@ -50,29 +50,7 @@ const Blogs = () => {
                       aria-controls="nav-contact"
                       aria-selected="false"
                     >
-                      Logo
-                    </a>
-                    <a
-                      className="nav-item nav-link"
-                      id="nav-last-tab"
-                      data-toggle="tab"
-                      href="#nav-last"
-                      role="tab"
-                      aria-controls="nav-contact"
-                      aria-selected="false"
-                    >
-                      UI/UX{" "}
-                    </a>
-                    <a
-                      className="nav-item nav-link"
-                      id="nav-technology"
-                      data-toggle="tab"
-                      href="#nav-techno"
-                      role="tab"
-                      aria-controls="nav-contact"
-                      aria-selected="false"
-                    >
-                      Web Design
+                      Projects
                     </a>
                   </div>
                 </nav>
