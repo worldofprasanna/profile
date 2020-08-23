@@ -83,7 +83,7 @@ const Blogs = () => {
             <div className="col-lg-6">
               {/* <!-- Section Tittle --> */}
               <div className="section-tittle">
-                <h2>What Services you will Get from me!</h2>
+                <h2>Few of my contributions</h2>
               </div>
             </div>
             <div className="col-lg-6">
@@ -113,7 +113,18 @@ const Blogs = () => {
                       aria-selected="false"
                     >
                       {" "}
-                      Github
+                      Github Code
+                    </a>
+                    <a
+                      className="nav-item nav-link"
+                      id="nav-contact-tab"
+                      data-toggle="tab"
+                      href="#nav-contact"
+                      role="tab"
+                      aria-controls="nav-contact"
+                      aria-selected="false"
+                    >
+                      Projects
                     </a>
                   </div>
                 </nav>

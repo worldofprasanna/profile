@@ -12,10 +12,8 @@ const Footer = () => {
                 <div className="footer-top-cap text-center">
                   <img src="assets/img/logo/logo2_footer.png" alt="" />
                   <span>
-                    <a href="/">hireme@portfolio.com</a>
+                    <a href="/">Twitter | Medium | Toptal | LinkedIn | Dev.to</a>
                   </span>
-                  <p>221B Baker Street, Post office Box 353 </p>
-                  <p>Park Road, USA - 215431</p>
                 </div>
               </div>
             </div>
@@ -31,24 +29,6 @@ const Footer = () => {
                   <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
                   <a href="https://colorlib.com">Colorlib</a>
                   {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p> */}
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4">
-                {/* <!-- Footer Social --> */}
-                <div className="footer-social f-right">
-                  <a href="/">Stay Connected</a>
-                  <a href="/">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="/">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="/">
-                    <i className="fas fa-globe"></i>
-                  </a>
-                  <a href="/">
-                    <i className="fab fa-instagram"></i>
-                  </a>
                 </div>
               </div>
             </div>
