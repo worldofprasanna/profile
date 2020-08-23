@@ -5,10 +5,10 @@ const Services = () => {
     <section className="categories-area section-padding3">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-12">
             {/* <!-- Section Tittle --> */}
             <div className="section-tittle mb-70">
-              <h2>What Services you will Get from me!</h2>
+              <h2>Reach out to me for consultation on,</h2>
             </div>
           </div>
         </div>

@@ -27,11 +27,7 @@ const HomePage = (props) => {
       <main>
         <Header />
 
-        <About />
-
         <Services />
-
-        <Blogs />
 
         <section className="wantToWork-area w-padding2">
           <div className="container">
@@ -49,6 +45,10 @@ const HomePage = (props) => {
             </div>
           </div>
         </section>
+
+        <About />
+
+        <Blogs />
 
         <Testimonials />
 
