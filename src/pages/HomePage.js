@@ -52,7 +52,7 @@ const HomePage = (props) => {
 
         <Testimonials />
 
-        <Products />
+        {/* <Products /> */}
 
         <Contact />
       </main>
