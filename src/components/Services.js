@@ -53,7 +53,7 @@ const Services = () => {
                   <a href="services.html">Backend Developer</a>
                 </h5>
                 <p>
-                  Comfortable with multiple tech stacks (Ruby on Rails, Scala) and has good experience in working with Distributed data Systems (Kafka, Cassandra, Flink, Spark)
+                  Comfortable with multiple tech stacks (Ruby on Rails, Scala) and has good experience in working with Distributed Systems & Streaming Data Analytics (Kafka, Cassandra, Flink, Spark)
                 </p>
               </div>
             </div>
