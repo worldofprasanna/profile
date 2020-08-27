@@ -55,7 +55,7 @@ const Testimonials = () => {
     ],
   };
   return (
-    <section className="client-comments section-paddingt30">
+    <section className="client-comments">
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-lg-8 col-md-10">

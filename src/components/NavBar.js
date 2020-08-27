@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   return (
@@ -23,38 +24,59 @@ const NavBar = () => {
                     <nav>
                       <ul id="navigation">
                         <li>
-                          <a href="index.html">Home</a>
+                          <Link
+                            to="slider-area"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            style={{ cursor: "pointer" }}
+                          >
+                            Home
+                          </Link>
                         </li>
                         <li>
-                          <a href="about.html">About</a>
+                          <Link
+                            to="categories-area"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            style={{ cursor: "pointer" }}
+                          >
+                            Services
+                          </Link>
                         </li>
                         <li>
-                          <a href="services.html">Services</a>
+                          <Link
+                            to="services-area"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            style={{ cursor: "pointer" }}
+                          >
+                            Blogs
+                          </Link>
                         </li>
                         <li>
-                          <a href="portfolio.html">Portfolio</a>
+                          <Link
+                            to="client-comments"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            style={{ cursor: "pointer" }}
+                          >
+                            Testimonial
+                          </Link>
                         </li>
                         <li>
-                          <a href="/">Page</a>
-                          <ul className="submenu">
-                            <li>
-                              <a href="blog.html">Blog</a>
-                            </li>
-                            <li>
-                              <a href="blog_details.html">Blog Details</a>
-                            </li>
-                            <li>
-                              <a href="elements.html">Element</a>
-                            </li>
-                            <li>
-                              <a href="portfolio_details.html">
-                                Portfolio Details
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="contact.html">Contact</a>
+                          <Link
+                            to="contact-info-area"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            style={{ cursor: "pointer" }}
+                          >
+                            Contact
+                          </Link>
                         </li>
                       </ul>
                     </nav>

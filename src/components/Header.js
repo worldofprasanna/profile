@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="slider-area ">
+    <div className="slider-area">
       <div className="slider-active">
         {/* <!-- Single Slider --> */}
         <div className="single-slider slider-height d-flex align-items-center">
@@ -19,11 +19,14 @@ const Header = () => {
                   <p data-animation="fadeInUp" data-delay=".8s">
                     <div>
                       Having decade of experience in Software Industry and
-                      passionate to solve hard problems. I have worked with wide variety of clients ranging Startups to Enterprises as a Developer,
-                      Tech Lead, Devops / Infra Freelance Engineer.
-                    </div><br />
+                      passionate to solve hard problems. I have worked with wide
+                      variety of clients ranging Startups to Enterprises as a
+                      Developer, Tech Lead, Devops / Infra Freelance Engineer.
+                    </div>
+                    <br />
                     <div>
-                      I love to automate things and highly aligned towards Infrastructure as code.
+                      I love to automate things and highly aligned towards
+                      Infrastructure as code.
                     </div>
                   </p>
                   {/* <!-- Hero-btn --> */}

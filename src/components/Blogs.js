@@ -76,7 +76,7 @@ const Blogs = () => {
   });
 
   return (
-    <section className="services-area  services-padding">
+    <section className="services-area services-padding pt-0">
       <div className="container">
         <div className="project-heading mb-35">
           <div className="row align-items-end">
