@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import MediumCard from "./MediumCard";
 import { Col } from "shards-react";
+import MediumCard from "./MediumCard";
+import GithubCard from "./GithubCard";
 
 const Blogs = () => {
   const settings = {
@@ -60,6 +61,12 @@ const Blogs = () => {
   const [avatar, setAvatar] = useState("");
   const [profilelink, setProfilelink] = useState("");
 
+  const githubRepos = [
+    "worldofprasanna/showcase-terraform-k8s",
+    "worldofprasanna/terraform-aws-staticwebsite",
+    "worldofprasanna/github-stats",
+  ];
+
   const mediumURL =
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@worldofprasanna";
 
@@ -73,7 +80,7 @@ const Blogs = () => {
         const fetchedPosts = res.filter((item) => item.categories.length > 0);
         setPosts(fetchedPosts);
       });
-  });
+  }, []);
 
   return (
     <section className="services-area services-padding pt-0">
@@ -93,9 +100,9 @@ const Blogs = () => {
                   <div className="nav nav-tabs" id="nav-tab" role="tablist">
                     <a
                       className="nav-item nav-link active"
-                      id="nav-home-tab"
+                      id="nav-blog-tab"
                       data-toggle="tab"
-                      href="#nav-home"
+                      href="#nav-blog"
                       role="tab"
                       aria-controls="nav-home"
                       aria-selected="false"
@@ -105,9 +112,9 @@ const Blogs = () => {
                     </a>
                     <a
                       className="nav-item nav-link"
-                      id="nav-profile-tab"
+                      id="nav-github-tab"
                       data-toggle="tab"
-                      href="#nav-profile"
+                      href="#nav-github"
                       role="tab"
                       aria-controls="nav-profile"
                       aria-selected="false"
@@ -133,22 +140,59 @@ const Blogs = () => {
             </div>
           </div>
         </div>
-        <div className="latest-blog-area">
-          <div className="container">
-            <div className="custom-row">
-              <div className="blog-active">
-                <div className="blog__slider">
-                  <Slider {...settings}>
-                    {posts.map((item) => (
-                      <Col key={item.title} className="mb-4">
-                        <MediumCard
-                          {...item}
-                          avatar={avatar}
-                          profilelink={profilelink}
-                        />
-                      </Col>
-                    ))}
-                  </Slider>
+        <div className="row">
+          <div className="col-12">
+            <div className="tab-content active" id="nav-tabContent">
+              <div
+                className="tab-pane fade active show"
+                id="nav-blog"
+                role="tabpanel"
+                aria-labelledby="nav-blog-tab"
+              >
+                <div className="latest-blog-area">
+                  <div className="container">
+                    <div className="custom-row">
+                      <div className="blog-active">
+                        <div className="blog__slider">
+                          <Slider {...settings}>
+                            {posts.map((item) => (
+                              <Col key={item.title} className="mb-4">
+                                <MediumCard
+                                  {...item}
+                                  avatar={avatar}
+                                  profilelink={profilelink}
+                                />
+                              </Col>
+                            ))}
+                          </Slider>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="tab-pane fade show"
+                id="nav-github"
+                role="tabpanel"
+                aria-labelledby="nav-github-tab"
+              >
+                <div className="latest-blog-area">
+                  <div className="container">
+                    <div className="custom-row">
+                      <div className="blog-active">
+                        <div className="blog__slider">
+                          <Slider {...settings}>
+                            {githubRepos.map((repo, i) => (
+                              <Col key={i} className="mb-4">
+                                <GithubCard repo={repo} index={i} />
+                              </Col>
+                            ))}
+                          </Slider>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

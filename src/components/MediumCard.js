@@ -52,11 +52,6 @@ export default function MediumCard(props) {
           {ShortenText(ToText(props.content), 0, 70) + "..."}
         </p>
         <br />
-        {/* <span className="text-dark">
-          <FontAwesomeIcon icon={faUser} /> {props.author}
-        </span>
-        <br /> */}
-
         <span className="text-muted">
           <FontAwesomeIcon icon={faCalendarAlt} /> {publishDate}
         </span>
