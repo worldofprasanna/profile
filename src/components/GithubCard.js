@@ -7,22 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const GithubCard = (props) => {
   const [repoData, setRepoData] = useState("");
+
   useEffect(() => {
     axios.get(`https://api.github.com/repos/${props.repo}`).then((data) => {
       setRepoData(data.data);
     });
   }, []);
-  // var shortMonthName = new Intl.DateTimeFormat("en-US", {
-  //   month: "short",
-  // }).format;
-  // let date = new Date(props.pubDate);
-  // const publishDate =
-  //   shortMonthName(date) +
-  //   " " +
-  //   date.getDate() +
-  //   "," +
-  //   " " +
-  //   date.getFullYear();
+
   return !!repoData.name ? (
     <Card className="card-post card-post--1">
       <div
@@ -53,8 +44,6 @@ const GithubCard = (props) => {
             className="text-fiord-blue"
             rel="noopener noreferrer"
           >
-            {/* {repoData.name} */}
-            {/* {JSON.stringify(repoData.name)} */}
             {ShortenText(repoData.name, 0, 50)}
           </a>
         </h5>
@@ -69,9 +58,6 @@ const GithubCard = (props) => {
           <span className="text-muted">
             <FontAwesomeIcon icon={faCodeBranch} /> {repoData.forks_count}
           </span>
-          {/* <span className="text-muted">
-            <FontAwesomeIcon icon={faStar} /> {repoData.stargazers_count}
-          </span> */}
         </div>
       </CardBody>
     </Card>

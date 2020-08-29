@@ -35,7 +35,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          {/* <div className="footer-bottom">
+          <div className="footer-bottom">
             <div className="row d-flex justify-content-between align-items-center">
               <div className="col-xl-9 col-lg-8">
                 <div className="footer-copy-right">
@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
       {/* <!-- Footer End--> */}

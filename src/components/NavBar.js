@@ -40,6 +40,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
+                            offset={-150}
                             style={{ cursor: "pointer" }}
                           >
                             Services
@@ -51,6 +52,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
+                            offset={-150}
                             style={{ cursor: "pointer" }}
                           >
                             Blogs
@@ -62,6 +64,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
+                            offset={-150}
                             style={{ cursor: "pointer" }}
                           >
                             Testimonial
