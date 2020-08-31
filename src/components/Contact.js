@@ -8,7 +8,25 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.send();
+
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+        { name, email, message },
+        process.env.REACT_APP_EMAIL_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -48,6 +66,7 @@ const Contact = () => {
                 placeholder="Full Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                required
               />
               <input
                 type="email"
@@ -55,6 +74,7 @@ const Contact = () => {
                 placeholder="Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                required
               />
               <textarea
                 name="message"
@@ -62,6 +82,7 @@ const Contact = () => {
                 placeholder="Your Message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                required
               ></textarea>
               <button className="submit-btn2" type="submit">
                 Send Message
