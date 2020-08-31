@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { Col } from "shards-react";
 import MediumCard from "./MediumCard";
 import GithubCard from "./GithubCard";
+import ProjectCard from "./ProjectCard";
 
 const Blogs = () => {
   const settings = {
@@ -28,7 +29,6 @@ const Blogs = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
           dots: false,
         },
       },
@@ -61,14 +61,24 @@ const Blogs = () => {
   const [avatar, setAvatar] = useState("");
   const [profilelink, setProfilelink] = useState("");
 
+  const mediumURL =
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@worldofprasanna";
+
   const githubRepos = [
     "worldofprasanna/showcase-terraform-k8s",
     "worldofprasanna/terraform-aws-staticwebsite",
     "worldofprasanna/github-stats",
   ];
 
-  const mediumURL =
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@worldofprasanna";
+  const projectData = [
+    {
+      title: "Ticket Medium",
+      link: "https://ticketmedium.com",
+      description:
+        "Create your favorite events from Conferences, Hackathons, Music festivals, conventions, pop-up dinners to Weekend photography/cooking",
+      image_src: "https://ticketmedium.com/img/logo_1.d16ec1a8.png",
+    },
+  ];
 
   useEffect(() => {
     fetch(mediumURL)
@@ -124,11 +134,11 @@ const Blogs = () => {
                     </a>
                     <a
                       className="nav-item nav-link"
-                      id="nav-contact-tab"
+                      id="nav-project-tab"
                       data-toggle="tab"
-                      href="#nav-contact"
+                      href="#nav-project"
                       role="tab"
-                      aria-controls="nav-contact"
+                      aria-controls="nav-project"
                       aria-selected="false"
                     >
                       Projects
@@ -186,6 +196,30 @@ const Blogs = () => {
                             {githubRepos.map((repo, i) => (
                               <Col key={i} className="mb-4">
                                 <GithubCard repo={repo} index={i} />
+                              </Col>
+                            ))}
+                          </Slider>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="tab-pane fade show"
+                id="nav-project"
+                role="tabpanel"
+                aria-labelledby="nav-project-tab"
+              >
+                <div className="latest-blog-area">
+                  <div className="container">
+                    <div className="custom-row">
+                      <div className="blog-active">
+                        <div className="blog__slider">
+                          <Slider {...settings} infinite={false}>
+                            {projectData.map((data) => (
+                              <Col key={data.title} className="mb-4">
+                                <ProjectCard {...data} />
                               </Col>
                             ))}
                           </Slider>

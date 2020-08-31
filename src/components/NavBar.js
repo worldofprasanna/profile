@@ -76,6 +76,7 @@ const NavBar = () => {
                             spy={true}
                             smooth={true}
                             duration={500}
+                            offset={-150}
                             style={{ cursor: "pointer" }}
                           >
                             Contact

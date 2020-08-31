@@ -1,30 +1,30 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import { Card, CardBody } from "shards-react";
 import ShortenText from "../utils/ShortenText";
-import { faStar, faCodeBranch } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const GithubCard = (props) => {
-  const [repoData, setRepoData] = useState("");
+const ProjectCard = (props) => {
+  // const [repoData, setRepoData] = useState("");
 
-  useEffect(() => {
-    axios.get(`https://api.github.com/repos/${props.repo}`).then((data) => {
-      setRepoData(data.data);
-    });
-  }, [props.repo]);
+  // useEffect(() => {
+  //   axios.get(`https://api.github.com/repos/${props.repo}`).then((data) => {
+  //     setRepoData(data.data);
+  //   });
+  // }, [props.repo]);
 
-  return !!repoData.name ? (
+  return (
     <Card className="card-post card-post--1">
       <div
         className="card-post__image"
         style={{
-          backgroundImage: `url(https://placeimg.com/640/480/tech/${props.index})`,
+          backgroundImage: `url(${props.image_src})`,
+          backgroundSize: "contain",
         }}
       >
-        <div className="card-post__author d-flex">
+        {/* <div className="card-post__author d-flex">
           <a
-            href={repoData.owner.html_url}
+            href="/"
             target="_blank"
             className="card-post__author-avatar card-post__author-avatar--small"
             style={{
@@ -34,34 +34,34 @@ const GithubCard = (props) => {
           >
             Written by {repoData.owner.login}
           </a>
-        </div>
+        </div> */}
       </div>
       <CardBody>
         <h5 className="card-title" style={{ height: "52px" }}>
           <a
-            href={repoData.html_url}
+            href={props.link}
             target="_blank"
             className="text-fiord-blue"
             rel="noopener noreferrer"
           >
-            {ShortenText(repoData.name, 0, 50)}
+            {ShortenText(props.title, 0, 50)}
           </a>
         </h5>
         <p className="card-text d-inline-block mb-3" style={{ height: "60px" }}>
-          {ShortenText(repoData.description, 0, 90) + "..."}
+          {ShortenText(props.description, 0, 60) + "..."}
         </p>
         <br />
         <div className="row justify-content-around">
-          <span className="text-muted">
-            <FontAwesomeIcon icon={faStar} /> {repoData.stargazers_count}
-          </span>
-          <span className="text-muted">
+          <a className="text-muted" href={props.link}>
+            <FontAwesomeIcon icon={faGlobe} /> Visit
+          </a>
+          {/* <span className="text-muted">
             <FontAwesomeIcon icon={faCodeBranch} /> {repoData.forks_count}
-          </span>
+          </span> */}
         </div>
       </CardBody>
     </Card>
-  ) : null;
+  );
 };
 
-export default GithubCard;
+export default ProjectCard;
