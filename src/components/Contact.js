@@ -63,6 +63,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
+                className="border"
                 placeholder="Full Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -71,6 +72,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
+                className="border"
                 placeholder="Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -79,6 +81,7 @@ const Contact = () => {
               <textarea
                 name="message"
                 id="message"
+                className="border"
                 placeholder="Your Message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
