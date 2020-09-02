@@ -60,6 +60,7 @@ const Blogs = () => {
   const [posts, setPosts] = useState([]);
   const [avatar, setAvatar] = useState("");
   const [profilelink, setProfilelink] = useState("");
+  const [activeTab, setActiveTab] = useState("Medium Blogs");
 
   const mediumURL =
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@worldofprasanna";
@@ -101,6 +102,7 @@ const Blogs = () => {
               {/* <!-- Section Tittle --> */}
               <div className="section-tittle">
                 <h2>Few of my contributions</h2>
+                <h4 className="pl-2">{activeTab}</h4>
               </div>
             </div>
             <div className="col-lg-6">
@@ -116,6 +118,7 @@ const Blogs = () => {
                       role="tab"
                       aria-controls="nav-home"
                       aria-selected="false"
+                      onClick={() => setActiveTab("Medium Blogs")}
                     >
                       {" "}
                       Blogs
@@ -128,6 +131,7 @@ const Blogs = () => {
                       role="tab"
                       aria-controls="nav-profile"
                       aria-selected="false"
+                      onClick={() => setActiveTab("Github Repos")}
                     >
                       {" "}
                       Github Code
@@ -140,6 +144,7 @@ const Blogs = () => {
                       role="tab"
                       aria-controls="nav-project"
                       aria-selected="false"
+                      onClick={() => setActiveTab("Projects")}
                     >
                       Projects
                     </a>
