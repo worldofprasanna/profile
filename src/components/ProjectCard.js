@@ -20,6 +20,7 @@ const ProjectCard = (props) => {
         style={{
           backgroundImage: `url(${props.image_src})`,
           backgroundSize: "contain",
+          backgroundColor: "antiquewhite",
         }}
       >
         {/* <div className="card-post__author d-flex">
