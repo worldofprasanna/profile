@@ -5,14 +5,18 @@ import {
   faTwitterSquare,
   faLinkedin,
   faDev,
+  faMedium,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   const social_links = [
-    { name: "facebook", link: "https://facebook.com", icon: faFacebookSquare },
-    { name: "facebook", link: "https://twitter.com", icon: faTwitterSquare },
-    { name: "facebook", link: "https://dev.to", icon: faDev },
-    { name: "facebook", link: "https://linkedin.com", icon: faLinkedin },
+    { name: "medium", link: "https://bit.ly/2RUAMFh", icon: faMedium },
+    { name: "linkedin", link: "https://bit.ly/2K6Uj0K", icon: faLinkedin },
+    { name: "github", link: "https://bit.ly/2RCzka4", icon: faGithub },
+    { name: "twitter", link: "https://bit.ly/2V9YcZb", icon: faTwitterSquare },
+    { name: "devto", link: "http://bit.ly/worldofprasanna-dev", icon: faDev },
+    { name: "facebook", link: "http://bit.ly/worldofprasanna-fb", icon: faFacebookSquare },
   ];
   return (
     <footer>
