@@ -70,25 +70,20 @@ const NavBar = () => {
                             Testimonial
                           </Link>
                         </li>
-                        <li>
-                          <Link
-                            to="contact-info-area"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
-                            offset={-150}
-                            style={{ cursor: "pointer" }}
-                          >
-                            Contact
-                          </Link>
-                        </li>
                       </ul>
                     </nav>
                   </div>
                   <div className="header-right-btn f-right d-none d-xl-block ml-20">
-                    <a href="/" className="btn header-btn">
-                      Get Free Consultent
-                    </a>
+                    <Link
+                      to="contact-info-area"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-150}
+                      className="btn header-btn"
+                    >
+                      Contact
+                    </Link>
                   </div>
                 </div>
               </div>
