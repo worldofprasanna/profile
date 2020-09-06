@@ -25,13 +25,13 @@ const Footer = () => {
         <div className="container">
           <div className="footer-top footer-padding">
             <div className="row justify-content-center">
-              <div className="col-lg-6">
+              <div className="col-lg-8">
                 <div className="footer-top-cap text-center">
                   <img src="assets/img/logo/logo2_footer.png" alt="" />
-                  <span className="flex-center-start justify-content-center">
+                  <span className="flex-center-start justify-content-around">
                     {social_links.map((item) => (
                       <a href={item.link} key={item.name} className="mx-2">
-                        <FontAwesomeIcon icon={item.icon} />
+                        <FontAwesomeIcon icon={item.icon} size="2x" />
                       </a>
                     ))}
                   </span>
