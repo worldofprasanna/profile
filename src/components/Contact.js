@@ -19,9 +19,11 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          alert("Thanks. Your message has been sent to Prasanna.")
         },
         (error) => {
           console.log(error.text);
+          alert("Sorry, there is some issue in sending the message")
         }
       );
     setName("");
@@ -38,20 +40,7 @@ const Contact = () => {
         <div className="row justify-content-between">
           <div className="col-xl-5 col-lg-7">
             <div className="contact-caption mb-50">
-              <h3>Feel free to reach out to me for,</h3>
-              <p>
-                <ul>
-                  <li>
-                    - Any Consulting work on Cloud | Kubernetes | Distributed
-                    Systems
-                  </li>
-                  <li>- To quickly build a MVP for your awesome idea</li>
-                  <li>
-                    - Showcase your Product | Tool. I am happy to take a look at
-                    it
-                  </li>
-                </ul>
-              </p>
+              <h3>Get in Touch,</h3>
             </div>
           </div>
           <div className="col-xl-5 col-lg-5">
@@ -87,6 +76,8 @@ const Contact = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 required
               ></textarea>
+              <div className="g-recaptcha" data-sitekey="6Ld4k8gZAAAAACkQpsrIh3LzvtIx6CPWiVkBuWmb"></div>
+              <br/>
               <button className="submit-btn2" type="submit">
                 Send Message
               </button>
