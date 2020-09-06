@@ -60,7 +60,7 @@ const Blogs = () => {
   const [posts, setPosts] = useState([]);
   const [avatar, setAvatar] = useState("");
   const [profilelink, setProfilelink] = useState("");
-  const [activeTab, setActiveTab] = useState("Medium Blogs");
+  const [setActiveTab] = useState("Medium Blogs");
 
   const mediumURL =
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@worldofprasanna";

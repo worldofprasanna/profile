@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
-import About from "../components/About";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import Products from "../components/Products";
