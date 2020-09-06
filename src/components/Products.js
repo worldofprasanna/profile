@@ -8,7 +8,7 @@ const Products = () => {
     autoplay: true,
     speed: 400,
     arrows: false,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
       {
@@ -53,25 +53,33 @@ const Products = () => {
   return (
     <div className="brand-area pb-bottom">
       <div className="container">
-        <div className="brand-active brand-border pt-50 pb-40">
-          <Slider {...settings}>
-            <div className="single-brand">
-              <img src="assets/img/gallery/brand1.png" alt="" />
+        <div className="row">
+          <div className="brand-active brand-border pt-50 pb-40">
+            <div className="section-tittle">
+              <h2>Experienced In</h2>
             </div>
-            <div className="single-brand">
-              <img src="assets/img/gallery/brand2.png" alt="" />
-            </div>
-            <div className="single-brand">
-              <img src="assets/img/gallery/brand3.png" alt="" />
-            </div>
-            <div className="single-brand">
-              <img src="assets/img/gallery/brand4.png" alt="" />
-            </div>
-            <div className="single-brand">
-              <img src="assets/img/gallery/brand2.png" alt="" />
-            </div>
-          </Slider>
+          </div>
         </div>
+        <Slider {...settings}>
+          <div className="single-brand">
+            <img src="assets/img/tools/aws.png" alt="" />
+          </div>
+          <div className="single-brand">
+            <img src="assets/img/tools/terraform.png" alt="" />
+          </div>
+          <div className="single-brand">
+            <img src="assets/img/tools/jenkins.png" alt="" />
+          </div>
+          <div className="single-brand">
+            <img src="assets/img/tools/k8s.png" alt="" />
+          </div>
+          <div className="single-brand">
+            <img src="assets/img/tools/golang.png" alt="" />
+          </div>
+          <div className="single-brand">
+            <img src="assets/img/tools/ansible.png" alt="" />
+          </div>
+        </Slider>
       </div>
     </div>
   );
