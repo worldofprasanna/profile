@@ -98,11 +98,10 @@ const Blogs = () => {
       <div className="container">
         <div className="project-heading mb-35">
           <div className="row align-items-end">
-            <div className="col-lg-6">
+            <div className="col-lg-12">
               {/* <!-- Section Tittle --> */}
               <div className="section-tittle">
                 <h2>Few of my contributions</h2>
-                <h4 className="pl-2">{activeTab}</h4>
               </div>
             </div>
             <div className="col-lg-6">

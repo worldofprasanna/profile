@@ -58,7 +58,7 @@ const Testimonials = () => {
     <section className="client-comments">
       <div className="container">
         <div className="row">
-          <div className="col-xl-6 col-lg-8 col-md-10">
+          <div className="col-xl-8 col-lg-10 col-md-12">
             <div className="section-tittle mb-70">
               <h2>Few words about my work,</h2>
             </div>
