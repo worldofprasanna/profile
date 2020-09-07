@@ -60,7 +60,7 @@ const Testimonials = () => {
         <div className="row">
           <div className="brand-active brand-border pt-40 pb-30">
             <div className="section-tittle">
-              <h2>Few of words about my work</h2>
+              <h2>Few words about my work</h2>
             </div>
           </div>
         </div>
