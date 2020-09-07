@@ -8,7 +8,7 @@ const Services = () => {
           <div className="col-lg-12">
             {/* <!-- Section Tittle --> */}
             <div className="section-tittle mb-70">
-              <h2>Reach out to me for consultation on,</h2>
+              <h2>Reach out to me for,</h2>
             </div>
           </div>
         </div>

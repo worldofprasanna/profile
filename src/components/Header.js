@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
@@ -31,22 +32,26 @@ const Header = () => {
                   </p>
                   {/* <!-- Hero-btn --> */}
                   <div className="hero__btn">
-                    <a
-                      href="industries.html"
-                      className="btn hero-btn"
-                      data-animation="fadeInLeft"
-                      data-delay=".8s"
+                    <Link
+                      to="categories-area"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-150}
+                      className="btn btn-white"
                     >
                       Learn More
-                    </a>
-                    <a
-                      href="industries.html"
-                      className="btn border-btn ml-15"
-                      data-animation="fadeInRight"
-                      data-delay="1.0s"
+                    </Link>
+                    <Link
+                      to="contact-info-area"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-150}
+                      className="btn btn-white ml-30"
                     >
                       Hire Me
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
