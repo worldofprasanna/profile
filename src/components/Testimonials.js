@@ -58,99 +58,101 @@ const Testimonials = () => {
     <section className="client-comments">
       <div className="container">
         <div className="row">
-          <div className="col-xl-8 col-lg-10 col-md-12">
-            <div className="section-tittle mb-70">
-              <h2>Few words about my work,</h2>
+          <div className="brand-active brand-border pt-40 pb-30">
+            <div className="section-tittle">
+              <h2>Few of words about my work</h2>
             </div>
           </div>
         </div>
-      </div>
-      <div className="latest-blog-area">
-        <div className="container">
-          <div className="custom-row">
-            <div className="blog-active">
-              <Slider {...settings}>
-                <div className="col-xl-12">
-                  <div className="blog-wrapper">
-                    <div className="blog-inner">
-                      <div className="blog-top">
-                        <div className="person-img">
-                          <img src="assets/img/gallery/blog1.png" alt="" />
-                        </div>
-                        <div className="comment-person">
-                          <h2>Bradley Erickson</h2>
-                          <span>UI/UX Designer</span>
+        <div className="row">
+          <div className="latest-blog-area">
+            <div className="container">
+              <div className="custom-row">
+                <div className="blog-active">
+                  <Slider {...settings}>
+                    <div className="col-xl-12">
+                      <div className="blog-wrapper">
+                        <div className="blog-inner">
+                          <div className="blog-top">
+                            <div className="person-img">
+                              <img src="assets/img/gallery/blog1.png" alt="" />
+                            </div>
+                            <div className="comment-person">
+                              <h2>Bradley Erickson</h2>
+                              <span>UI/UX Designer</span>
+                            </div>
+                          </div>
+                          <p>
+                            Consectetur adipisicing elit, seddosdoe eiusmod tempor
+                            incididunt utore etstes dolore magna aliqua. Ut imminim
+                            restai veniam, quis nostrud.
+                      </p>
                         </div>
                       </div>
-                      <p>
-                        Consectetur adipisicing elit, seddosdoe eiusmod tempor
-                        incididunt utore etstes dolore magna aliqua. Ut imminim
-                        restai veniam, quis nostrud.
-                      </p>
                     </div>
-                  </div>
-                </div>
-                <div className="col-xl-12">
-                  <div className="blog-wrapper">
-                    <div className="blog-inner">
-                      <div className="blog-top">
-                        <div className="person-img">
-                          <img src="assets/img/gallery/blog2.png" alt="" />
-                        </div>
-                        <div className="comment-person">
-                          <h2>Bradley Erickson</h2>
-                          <span>UI/UX Designer</span>
+                    <div className="col-xl-12">
+                      <div className="blog-wrapper">
+                        <div className="blog-inner">
+                          <div className="blog-top">
+                            <div className="person-img">
+                              <img src="assets/img/gallery/blog2.png" alt="" />
+                            </div>
+                            <div className="comment-person">
+                              <h2>Bradley Erickson</h2>
+                              <span>UI/UX Designer</span>
+                            </div>
+                          </div>
+                          <p>
+                            Consectetur adipisicing elit, seddosdoe eiusmod tempor
+                            incididunt utore etstes dolore magna aliqua. Ut imminim
+                            restai veniam, quis nostrud.
+                      </p>
                         </div>
                       </div>
-                      <p>
-                        Consectetur adipisicing elit, seddosdoe eiusmod tempor
-                        incididunt utore etstes dolore magna aliqua. Ut imminim
-                        restai veniam, quis nostrud.
-                      </p>
                     </div>
-                  </div>
-                </div>
-                <div className="col-xl-12">
-                  <div className="blog-wrapper">
-                    <div className="blog-inner">
-                      <div className="blog-top">
-                        <div className="person-img">
-                          <img src="assets/img/gallery/blog3.png" alt="" />
-                        </div>
-                        <div className="comment-person">
-                          <h2>Bradley Erickson</h2>
-                          <span>UI/UX Designer</span>
+                    <div className="col-xl-12">
+                      <div className="blog-wrapper">
+                        <div className="blog-inner">
+                          <div className="blog-top">
+                            <div className="person-img">
+                              <img src="assets/img/gallery/blog3.png" alt="" />
+                            </div>
+                            <div className="comment-person">
+                              <h2>Bradley Erickson</h2>
+                              <span>UI/UX Designer</span>
+                            </div>
+                          </div>
+                          <p>
+                            Consectetur adipisicing elit, seddosdoe eiusmod tempor
+                            incididunt utore etstes dolore magna aliqua. Ut imminim
+                            restai veniam, quis nostrud.
+                      </p>
                         </div>
                       </div>
-                      <p>
-                        Consectetur adipisicing elit, seddosdoe eiusmod tempor
-                        incididunt utore etstes dolore magna aliqua. Ut imminim
-                        restai veniam, quis nostrud.
-                      </p>
                     </div>
-                  </div>
-                </div>
-                <div className="col-xl-12">
-                  <div className="blog-wrapper">
-                    <div className="blog-inner">
-                      <div className="blog-top">
-                        <div className="person-img">
-                          <img src="assets/img/gallery/blog2.png" alt="" />
-                        </div>
-                        <div className="comment-person">
-                          <h2>Bradley Erickson</h2>
-                          <span>UI/UX Designer</span>
+                    <div className="col-xl-12">
+                      <div className="blog-wrapper">
+                        <div className="blog-inner">
+                          <div className="blog-top">
+                            <div className="person-img">
+                              <img src="assets/img/gallery/blog2.png" alt="" />
+                            </div>
+                            <div className="comment-person">
+                              <h2>Bradley Erickson</h2>
+                              <span>UI/UX Designer</span>
+                            </div>
+                          </div>
+                          <p>
+                            Consectetur adipisicing elit, seddosdoe eiusmod tempor
+                            incididunt utore etstes dolore magna aliqua. Ut imminim
+                            restai veniam, quis nostrud.
+                      </p>
                         </div>
                       </div>
-                      <p>
-                        Consectetur adipisicing elit, seddosdoe eiusmod tempor
-                        incididunt utore etstes dolore magna aliqua. Ut imminim
-                        restai veniam, quis nostrud.
-                      </p>
                     </div>
-                  </div>
+                  </Slider>
                 </div>
-              </Slider>
+              </div>
             </div>
           </div>
         </div>

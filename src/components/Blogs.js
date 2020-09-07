@@ -60,7 +60,7 @@ const Blogs = () => {
   const [posts, setPosts] = useState([]);
   const [avatar, setAvatar] = useState("");
   const [profilelink, setProfilelink] = useState("");
-  const [setActiveTab] = useState("Medium Blogs");
+  const [activeTab, setActiveTab] = useState("Blogs");
 
   const mediumURL =
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@worldofprasanna";
@@ -94,63 +94,62 @@ const Blogs = () => {
   }, []);
 
   return (
-    <section className="services-area services-padding pt-0">
+    <section className="services-area">
       <div className="container">
-        <div className="project-heading mb-35">
-          <div className="row align-items-end">
-            <div className="col-lg-12">
-              {/* <!-- Section Tittle --> */}
-              <div className="section-tittle">
-                <h2>Few of my contributions</h2>
-              </div>
+        <div className="row">
+          <div className="brand-active brand-border pt-40 pb-30">
+            <div className="section-tittle">
+              <h2>Few of my {activeTab}</h2>
             </div>
-            <div className="col-lg-6">
-              <div className="properties__button">
-                {/* <!--Nav Button  -->*/}
-                <nav>
-                  <div className="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a
-                      className="nav-item nav-link active"
-                      id="nav-blog-tab"
-                      data-toggle="tab"
-                      href="#nav-blog"
-                      role="tab"
-                      aria-controls="nav-home"
-                      aria-selected="false"
-                      onClick={() => setActiveTab("Medium Blogs")}
-                    >
-                      {" "}
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-6">
+            <div className="properties__button pb-20">
+              {/* <!--Nav Button  -->*/}
+              <nav>
+                <div className="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a
+                    className="nav-item nav-link active"
+                    id="nav-blog-tab"
+                    data-toggle="tab"
+                    href="#nav-blog"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="false"
+                    onClick={() => setActiveTab("Blogs")}
+                  >
+                    {" "}
                       Blogs
                     </a>
-                    <a
-                      className="nav-item nav-link"
-                      id="nav-github-tab"
-                      data-toggle="tab"
-                      href="#nav-github"
-                      role="tab"
-                      aria-controls="nav-profile"
-                      aria-selected="false"
-                      onClick={() => setActiveTab("Github Repos")}
-                    >
-                      {" "}
+                  <a
+                    className="nav-item nav-link"
+                    id="nav-github-tab"
+                    data-toggle="tab"
+                    href="#nav-github"
+                    role="tab"
+                    aria-controls="nav-profile"
+                    aria-selected="false"
+                    onClick={() => setActiveTab("Github Repos")}
+                  >
+                    {" "}
                       Github Code
                     </a>
-                    <a
-                      className="nav-item nav-link"
-                      id="nav-project-tab"
-                      data-toggle="tab"
-                      href="#nav-project"
-                      role="tab"
-                      aria-controls="nav-project"
-                      aria-selected="false"
-                      onClick={() => setActiveTab("Projects")}
-                    >
-                      Projects
+                  <a
+                    className="nav-item nav-link"
+                    id="nav-project-tab"
+                    data-toggle="tab"
+                    href="#nav-project"
+                    role="tab"
+                    aria-controls="nav-project"
+                    aria-selected="false"
+                    onClick={() => setActiveTab("Projects")}
+                  >
+                    Projects
                     </a>
-                  </div>
-                </nav>
-                {/* <!--End Nav Button  --> */}
-              </div>
+                </div>
+              </nav>
+              {/* <!--End Nav Button  --> */}
             </div>
           </div>
         </div>

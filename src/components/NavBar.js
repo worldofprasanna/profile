@@ -80,7 +80,7 @@ const NavBar = () => {
                       smooth={true}
                       duration={500}
                       offset={-150}
-                      className="btn header-btn"
+                      className="btn btn-white"
                     >
                       Contact
                     </Link>

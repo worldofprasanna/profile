@@ -28,6 +28,9 @@ const HomePage = (props) => {
 
         <Services />
 
+        <div className="container">
+          <hr />
+        </div>
         {/* <section className="wantToWork-area w-padding2">
           <div className="container">
             <div className="row align-items-center justify-content-between">
@@ -47,9 +50,21 @@ const HomePage = (props) => {
 
         <Products />
 
+        <div className="container">
+          <hr />
+        </div>
+
         <Blogs />
 
+        <div className="container">
+          <hr />
+        </div>
+
         <Testimonials />
+
+        <div className="container">
+          <hr />
+        </div>
 
         <Contact />
       </main>

@@ -51,7 +51,7 @@ const Products = () => {
     ],
   };
   return (
-    <div className="brand-area pb-bottom">
+    <section className="brand-area">
       <div className="container">
         <div className="row">
           <div className="brand-active brand-border pt-50 pb-40">
@@ -60,28 +60,30 @@ const Products = () => {
             </div>
           </div>
         </div>
-        <Slider {...settings}>
-          <div className="single-brand">
-            <img src="assets/img/tools/aws.png" alt="" />
-          </div>
-          <div className="single-brand">
-            <img src="assets/img/tools/terraform.png" alt="" />
-          </div>
-          <div className="single-brand">
-            <img src="assets/img/tools/jenkins.png" alt="" />
-          </div>
-          <div className="single-brand">
-            <img src="assets/img/tools/k8s.png" alt="" />
-          </div>
-          <div className="single-brand">
-            <img src="assets/img/tools/golang.png" alt="" />
-          </div>
-          <div className="single-brand">
-            <img src="assets/img/tools/ansible.png" alt="" />
-          </div>
-        </Slider>
+        <div>
+          <Slider {...settings}>
+            <div className="single-brand">
+              <img src="assets/img/tools/aws.png" alt="" />
+            </div>
+            <div className="single-brand">
+              <img src="assets/img/tools/terraform.png" alt="" />
+            </div>
+            <div className="single-brand">
+              <img src="assets/img/tools/jenkins.png" alt="" />
+            </div>
+            <div className="single-brand">
+              <img src="assets/img/tools/k8s.png" alt="" />
+            </div>
+            <div className="single-brand">
+              <img src="assets/img/tools/golang.png" alt="" />
+            </div>
+            <div className="single-brand">
+              <img src="assets/img/tools/ansible.png" alt="" />
+            </div>
+          </Slider>
+        </div>
       </div>
-    </div>
+    </section >
   );
 };
 
