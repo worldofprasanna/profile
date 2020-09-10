@@ -1917,8 +1917,9 @@ hr {
 .section-tittle h2 {
   font-size: 48px;
   display: block;
-  color: #000a2d;
-  font-weight: 600;
+  color: #292929;
+  /* color: #000a2d; */
+  /* font-weight: 600; */
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .section-tittle h2 {
@@ -2804,8 +2805,8 @@ hr {
     font-size: 45px;
   }
 }
-.footer-area .footer-top .footer-top-cap span a:hvoer {
-  color: #fff;
+.footer-area .footer-top .footer-top-cap span a:hover {
+  color: #ec5b53;
 }
 .footer-area .footer-top .footer-top-cap p {
   color: #c5c5dd;

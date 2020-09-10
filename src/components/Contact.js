@@ -60,8 +60,8 @@ const Contact = () => {
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-xl-5 col-lg-7">
-            <div className="contact-caption mb-50">
-              <h3>Get in Touch,</h3>
+            <div className="contact-caption mb-50 section-tittle">
+              <h2>Get in touch,</h2>
             </div>
           </div>
           <div className="col-xl-5 col-lg-5">

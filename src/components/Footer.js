@@ -16,7 +16,11 @@ const Footer = () => {
     { name: "github", link: "https://bit.ly/2RCzka4", icon: faGithub },
     { name: "twitter", link: "https://bit.ly/2V9YcZb", icon: faTwitterSquare },
     { name: "devto", link: "http://bit.ly/worldofprasanna-dev", icon: faDev },
-    { name: "facebook", link: "http://bit.ly/worldofprasanna-fb", icon: faFacebookSquare },
+    {
+      name: "facebook",
+      link: "http://bit.ly/worldofprasanna-fb",
+      icon: faFacebookSquare,
+    },
   ];
   return (
     <footer>
@@ -47,7 +51,8 @@ const Footer = () => {
                   <script>document.write(new Date().getFullYear());</script> All
                   rights reserved | This template is made with{" "}
                   <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
-                  <a href="https://colorlib.com">Colorlib</a> and customised in <a href="https://reactjs.org/">ReactJS</a>
+                  <a href="https://colorlib.com">Colorlib</a> and customised in{" "}
+                  <a href="https://reactjs.org/">ReactJS</a>
                 </div>
               </div>
             </div>
