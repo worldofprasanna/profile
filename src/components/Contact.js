@@ -27,7 +27,7 @@ const Contact = () => {
           cogoToast.success("Your message has been sent to Prasanna.", {
             heading: "Thanks",
             position: "top-right",
-            hideAfter: 300,
+            hideAfter: 3,
             bar: { size: "10px" },
           });
           recaptchaRef.current.reset();
@@ -44,7 +44,7 @@ const Contact = () => {
             cogoToast.error("There is some issue in sending the message.", {
               heading: "Error",
               position: "top-right",
-              hideAfter: 300,
+              hideAfter: 3,
               bar: { size: "10px" },
             });
           }
