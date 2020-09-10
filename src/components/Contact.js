@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, createRef } from "react";
 import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";
+import cogoToast from "cogo-toast";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [recaptchaError, setRecaptchaError] = useState("");
+
+  const recaptchaRef = createRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,16 +24,32 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Thanks. Your message has been sent to Prasanna.")
+          cogoToast.success("Your message has been sent to Prasanna.", {
+            heading: "Thanks",
+            position: "top-right",
+            hideAfter: 300,
+            bar: { size: "10px" },
+          });
+          recaptchaRef.current.reset();
+          setName("");
+          setEmail("");
+          setMessage("");
+          setRecaptchaError("");
         },
         (error) => {
           console.log(error.text);
-          alert("Sorry, there is some issue in sending the message")
+          if (error?.text === "The g-recaptcha-response parameter not found") {
+            setRecaptchaError("Please verify recaptcha");
+          } else {
+            cogoToast.error("There is some issue in sending the message.", {
+              heading: "Error",
+              position: "top-right",
+              hideAfter: 300,
+              bar: { size: "10px" },
+            });
+          }
         }
       );
-    setName("");
-    setEmail("");
-    setMessage("");
   };
 
   return (
@@ -76,8 +97,12 @@ const Contact = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 required
               ></textarea>
-              <div className="g-recaptcha" data-sitekey="6Ld4k8gZAAAAACkQpsrIh3LzvtIx6CPWiVkBuWmb"></div>
-              <br/>
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey="6Ld4k8gZAAAAACkQpsrIh3LzvtIx6CPWiVkBuWmb"
+              />
+              <span className="text-danger">{recaptchaError}</span>
+              <br />
               <button className="submit-btn2" type="submit">
                 Send Message
               </button>
