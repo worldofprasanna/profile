@@ -7,6 +7,7 @@ import Products from "../components/Products";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Blogs from "../components/Blogs";
+import { Link } from "react-scroll";
 
 const HomePage = (props) => {
   return (
@@ -71,10 +72,16 @@ const HomePage = (props) => {
       <Footer />
 
       <div id="back-top">
-        <a title="Go to Top" href="/">
+        <Link
+          to="slider-area"
+          spy={true}
+          smooth={true}
+          duration={500}
+          style={{ textDecoration: "none", cursor: "pointer" }}
+        >
           {" "}
           <i className="fas fa-level-up-alt"></i>
-        </a>
+        </Link>
       </div>
     </React.Fragment>
   );
