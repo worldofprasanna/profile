@@ -2719,7 +2719,7 @@ hr {
 }
 .categories-area .single-cat .cat-cap h5 > a {
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 21px;
   display: block;
   -webkit-transition: all 0.2s ease-out 0s;
